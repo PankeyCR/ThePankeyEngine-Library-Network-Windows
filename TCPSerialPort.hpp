@@ -87,7 +87,7 @@ namespace pankey{
                             return 0;
                         }
 
-                        CharPointer i_chars = toCharPointer(a_message);
+                        pankey::Utility::Test::CharPointer i_chars = pankey::Type::Array::toCharPointer(a_message);
                         return send(
                             m_socket,
                             i_chars.get(),
